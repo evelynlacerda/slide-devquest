@@ -1,0 +1,122 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container,
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.arrow.right {
+    right: 0;
+    padding: 0 2.4rem 0 1rem;
+}
+
+.arrow.left {
+    padding: 0 1rem 0 2.4rem;
+}
+
+.arrow img {
+    width: 32px;
+    height: auto;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.slide.rose {
+    background: url('../img/img-rose.png') no-repeat center center;
+}
+
+.slide.yello {
+    background: url('../img/img-yellow.png') no-repeat center center;
+}
+
+.slide.orang {
+    background: url('../img/img-orange.png') no-repeat center center;
+}
+
+.slide.blu {
+    background: url('../img/img-blue.png') no-repeat center center;
+}
+
+.content {
+    max-width: 620px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f2f1ee;
+    border-radius: 2rem;
+    box-shadow: inset 0 -4px 12px rgba(0, 0, 0, 0.3), inset 0 8px 16px rgba(255, 255, 255, .75), 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 4rem;
+    margin: 0 0 0 20rem;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0 0 4.8rem;
+}
+
+.text {
+    font-size: 1.8rem;
+    text-align: justify;
+    margin: 0 0 4rem;
+}
+
+.more {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.more.one {
+    color: #c87895;
+}
+
+.more.two {
+    color: #D9DD10;
+}
+
+.more.three {
+    color: #bb4118;
+}
+
+.more.four {
+    color: #10ACDD;
+}
+
+.opacity {
+    opacity: .25;
+}
+
+.show {
+    opacity: 1;
+}
